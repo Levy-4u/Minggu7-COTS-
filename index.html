@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard Surat</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+
+        <header class="app-header">
+            <h1>COTS 1 ProWeb</h1>
+            <p class="user-greeting">Hi, 103092400030 - Walgi Renden</p>
+        </header>
+
+        <nav class="toolbar" aria-label="Menu utama">
+            <div class="toolbar-menu">
+                <a class="toolbar-button">
+                    <img src="kotak-masuk-abu.svg" alt="" class="icon icon-small" />
+                    <span>Incoming Letter</span>
+                </a>
+
+                <a class="toolbar-button">
+                    <img src="folder-abu.svg" alt="" class="icon icon-small" />
+                    <span>My Folder</span>
+                </a>
+            </div>
+
+            <form class="toolbar-search" role="search">
+                <input type="search" aria-label="Pencarian surat" placeholder="Search ..." />
+                <button type="submit" aria-label="Cari">
+                    <img src="cari-abu.svg" alt="" class="icon icon-search" />
+                </button>
+            </form>
+        </nav>
+
+        <div class="page-layout">
+            <aside class="sidebar" id="incoming-letters" aria-labelledby="incoming-heading">
+                <h2 class="sidebar-heading" id="incoming-heading">Incoming Letter</h2>
+
+                <div class="mail-list">
+                    <article class="mail-item">
+                        <img src="surat-abu-muda.svg" alt="" class="icon mail-icon" />
+                        <div class="mail-content">
+                            <div class="mail-header">
+                                <h3 class="mail-sender">Direktur Pusat Teknologi Informasi TELKOM UNIVERSITY</h3>
+                                <time class="mail-datetime" datetime="2026-10-14T14:11">
+                                    <span>30 Oct</span><span>09:11</span>
+                                </time>
+                            </div>
+                            <p class="mail-subject">Tindak Lanjut Permohonan Perubahan Dosen Wali</p>
+                        </div>
+                    </article>
+
+                    <article class="mail-item">
+                        <img src="surat-abu-muda.svg" alt="" class="icon mail-icon" />
+                        <div class="mail-content">
+                            <div class="mail-header">
+                                <h3 class="mail-sender">Kepala Bagian Admisi Internasional Telkom University</h3>
+                                <time class="mail-datetime" datetime="2026-10-14T11:26">
+                                    <span>30 Oct</span><span>11:26</span>
+                                </time>
+                            </div>
+                            <p class="mail-subject">Undangan Koordinasi Registrasi Mahasiswa Asing</p>
+                        </div>
+                    </article>
+
+                    <article class="mail-item">
+                        <img src="surat-abu-muda.svg" alt="" class="icon mail-icon" />
+                        <div class="mail-content">
+                            <div class="mail-header">
+                                <h3 class="mail-sender">Kepala Departement Telkom University</h3>
+                                <time class="mail-datetime" datetime="2026-10-14T11:26">
+                                    <span>30 Oct</span><span>12:00</span>
+                                </time>
+                            </div>
+                            <p class="mail-subject">Undangan Koordinasi Rapat</p>
+                        </div>
+                    </article>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                    <div class="dashboard-tabs">
+                        <h2 class="active-tab">Dashboard</h2>
+                    </div>
+
+                <div class="dashboard-content">
+                    <div class="quick-actions" aria-label="Buat surat">
+                        <a class="quick-action">
+                            <img src="dokumen-abu.svg" alt="" class="icon icon-small" />
+                            <span>Create Internal Letter</span>
+                        </a>
+
+                        <a class="quick-action">
+                            <img src="dokumen-abu.svg" alt="" class="icon icon-small" />
+                            <span>Create External Letter</span>
+                        </a>
+
+                        <a class="quick-action">
+                            <img src="dokumen-abu.svg" alt="" class="icon icon-small" />
+                            <span>Create Invitational Letter</span>
+                        </a>
+                    </div>
+
+                    <section class="summary-cards" aria-label="Kartu ringkasan dashboard">
+                        <article class="summary-card green-card">
+                            <div class="card-body">
+                                <img src="kotak-masuk-putih.svg" alt="" class="icon metric-icon" />
+                                <div class="card-metric"><strong>0</strong><span>Need Follow Up</span></div>
+                            </div>
+
+                            <a class="card-footer">
+                                <span>View Details</span>
+                                <img src="panah-hijau.svg" alt="" class="icon icon-arrow" />
+                            </a>
+                        </article>
+
+                        <article class="summary-card blue-card">
+                            <div class="card-body">
+                                <img src="dokumen-putih.svg" alt="" class="icon metric-icon" />
+                                <div class="card-metric"><strong>0</strong><span>Incoming Letter</span></div>
+                            </div>
+
+                            <a class="card-footer">
+                                <span>View Details</span>
+                                <img src="panah-biru.svg" alt="" class="icon icon-arrow" />
+                            </a>
+                        </article>
+
+                        <article class="summary-card red-card">
+                            <div class="card-body">
+                                <img src="percakapan-putih.svg" class="icon metric-icon" />
+                                <div class="card-metric"><strong>0</strong><span>Disposition</span></div>
+                            </div>
+
+                            <a class="card-footer">
+                                <span>View Details</span>
+                                <img src="panah-merah.svg" class="icon icon-arrow" />
+                            </a>
+                        </article>
+                    </section>
+
+                    <section class="todo-section" aria-labelledby="todo-heading">
+                        <div class="todo-panel">
+                            <h2 id="todo-heading">Todo</h2>
+                            <form class="todo-search" action="#" role="search">
+                                <input type="search" placeholder="Search todo..." aria-label="Cari todo" />
+                                <button type="submit" aria-label="Cari todo">
+                                    <img src="cari-abu-gelap.svg" alt="" class="icon icon-search" />
+                                </button>
+                            </form>
+                        </div>
+                        <p class="todo-empty"><em>You don't have ToDo</em></p>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
